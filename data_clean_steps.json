@@ -1,0 +1,1588 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUDE",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUDE using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUDE",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUDE using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OWNER_CODE",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OWNER_CODE using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FIRE_SIZE",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FIRE_SIZE using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CONTRA COSTA",
+          "Contra Costa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contra Costa"
+      },
+      {
+        "from": [
+          "SAN BENITO",
+          "San Benito"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Benito"
+      },
+      {
+        "from": [
+          "SANTA CRUZ",
+          "Santa Cruz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Cruz"
+      },
+      {
+        "from": [
+          "YOLO",
+          "Yolo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yolo"
+      },
+      {
+        "from": [
+          "Kern",
+          "KERN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kern"
+      },
+      {
+        "from": [
+          "Lassen",
+          "LASSEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lassen"
+      },
+      {
+        "from": [
+          "BUTTE",
+          "Butte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Butte"
+      },
+      {
+        "from": [
+          "MARIN",
+          "Marin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marin"
+      },
+      {
+        "from": [
+          "VENTURA",
+          "Ventura"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ventura"
+      },
+      {
+        "from": [
+          "STANISLAUS",
+          "Stanislaus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stanislaus"
+      },
+      {
+        "from": [
+          "DEL NORTE",
+          "Del Norte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Del Norte"
+      },
+      {
+        "from": [
+          "GLENN",
+          "Glenn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glenn"
+      },
+      {
+        "from": [
+          "FRESNO",
+          "Fresno"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fresno"
+      },
+      {
+        "from": [
+          "SANTA BARBARA",
+          "Santa Barbara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Barbara"
+      },
+      {
+        "from": [
+          "YUBA",
+          "Yuba"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yuba"
+      },
+      {
+        "from": [
+          "Modoc",
+          "MODOC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Modoc"
+      },
+      {
+        "from": [
+          "LOS ANGELES",
+          "Los Angeles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Angeles"
+      },
+      {
+        "from": [
+          "PLACER",
+          "Placer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Placer"
+      },
+      {
+        "from": [
+          "Mariposa",
+          "MARIPOSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mariposa"
+      },
+      {
+        "from": [
+          "Imperial",
+          "IMPERIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Imperial"
+      },
+      {
+        "from": [
+          "San Bernardino",
+          "SAN BERNARDINO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Bernardino"
+      },
+      {
+        "from": [
+          "Trinity",
+          "TRINITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trinity"
+      },
+      {
+        "from": [
+          "Plumas",
+          "PLUMAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plumas"
+      },
+      {
+        "from": [
+          "MADERA",
+          "Madera"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madera"
+      },
+      {
+        "from": [
+          "SAN MATEO",
+          "San Mateo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Mateo"
+      },
+      {
+        "from": [
+          "TEHAMA",
+          "Tehama"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tehama"
+      },
+      {
+        "from": [
+          "SAN LUIS OBISPO",
+          "San Luis Obispo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Luis Obispo"
+      },
+      {
+        "from": [
+          "KINGS",
+          "Kings"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kings"
+      },
+      {
+        "from": [
+          "Riverside",
+          "RIVERSIDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Riverside"
+      },
+      {
+        "from": [
+          "Siskiyou",
+          "SISKIYOU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Siskiyou"
+      },
+      {
+        "from": [
+          "SACRAMENTO",
+          "Sacramento"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sacramento"
+      },
+      {
+        "from": [
+          "Tuolumne",
+          "TUOLUMNE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tuolumne"
+      },
+      {
+        "from": [
+          "ALAMEDA",
+          "Alameda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alameda"
+      },
+      {
+        "from": [
+          "El Dorado",
+          "EL DORADO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Dorado"
+      },
+      {
+        "from": [
+          "Calaveras",
+          "CALAVERAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calaveras"
+      },
+      {
+        "from": [
+          "LAKE",
+          "Lake"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lake"
+      },
+      {
+        "from": [
+          "Amador",
+          "AMADOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amador"
+      },
+      {
+        "from": [
+          "HUMBOLDT",
+          "Humboldt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Humboldt"
+      },
+      {
+        "from": [
+          "Sierra",
+          "SIERRA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sierra"
+      },
+      {
+        "from": [
+          "Inyo",
+          "INYO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inyo"
+      },
+      {
+        "from": [
+          "SANTA CLARA",
+          "Santa Clara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Clara"
+      },
+      {
+        "from": [
+          "Mono",
+          "MONO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mono"
+      },
+      {
+        "from": [
+          "Shasta",
+          "SHASTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shasta"
+      },
+      {
+        "from": [
+          "NAPA",
+          "Napa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Napa"
+      },
+      {
+        "from": [
+          "MENDOCINO",
+          "Mendocino"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mendocino"
+      },
+      {
+        "from": [
+          "SOLANO",
+          "Solano"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Solano"
+      },
+      {
+        "from": [
+          "Nevada",
+          "NEVADA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nevada"
+      },
+      {
+        "from": [
+          "MERCED",
+          "Merced"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Merced"
+      },
+      {
+        "from": [
+          "ORANGE",
+          "Orange"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orange"
+      },
+      {
+        "from": [
+          "MONTEREY",
+          "Monterey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monterey"
+      },
+      {
+        "from": [
+          "San Diego",
+          "SAN DIEGO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Diego"
+      },
+      {
+        "from": [
+          "TULARE",
+          "Tulare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tulare"
+      },
+      {
+        "from": [
+          "SONOMA",
+          "Sonoma"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sonoma"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colusa",
+          "COLUSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Colusa"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Humboldt",
+          "Humbolt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Humboldt"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sacramento",
+          "SACRAMENTO/AMADOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sacramento"
+      },
+      {
+        "from": [
+          "RIVERSIDE, SAN BRDNO",
+          "Riverside County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Riverside"
+      },
+      {
+        "from": [
+          "Santa Barbara",
+          "Santa Barbara County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Barbara"
+      },
+      {
+        "from": [
+          "Santa Clara",
+          "Santa Clara (See 44)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Clara"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Bernardino",
+          "SAN BERNADINO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Bernardino"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LAC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Angeles"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LAKE - SONOMA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lake"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Madera County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madera"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Trinity County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trinity"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ventura County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ventura"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Diego County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Diego"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Monterey County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monterey"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Orange County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orange"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Orange / Riverside"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orange"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Humboldt County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Humboldt"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kern County"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kern"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Douglas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trinity"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "003"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "005"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "007"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "009"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "011"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "15"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "017"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "17"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "019"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "19"
+      }
+    ],
+    "description": "Mass edit cells in column COUNTY"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "COUNTY",
+          "expression": "value",
+          "columnName": "COUNTY",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "091",
+                "l": "091"
+              }
+            },
+            {
+              "v": {
+                "v": "071",
+                "l": "071"
+              }
+            },
+            {
+              "v": {
+                "v": "093",
+                "l": "093"
+              }
+            },
+            {
+              "v": {
+                "v": "073",
+                "l": "073"
+              }
+            },
+            {
+              "v": {
+                "v": "051",
+                "l": "051"
+              }
+            },
+            {
+              "v": {
+                "v": "053",
+                "l": "053"
+              }
+            },
+            {
+              "v": {
+                "v": "033",
+                "l": "033"
+              }
+            },
+            {
+              "v": {
+                "v": "057",
+                "l": "057"
+              }
+            },
+            {
+              "v": {
+                "v": "035",
+                "l": "035"
+              }
+            },
+            {
+              "v": {
+                "v": "079",
+                "l": "079"
+              }
+            },
+            {
+              "v": {
+                "v": "059",
+                "l": "059"
+              }
+            },
+            {
+              "v": {
+                "v": "037",
+                "l": "037"
+              }
+            },
+            {
+              "v": {
+                "v": "039",
+                "l": "039"
+              }
+            },
+            {
+              "v": {
+                "v": "083",
+                "l": "083"
+              }
+            },
+            {
+              "v": {
+                "v": "061",
+                "l": "061"
+              }
+            },
+            {
+              "v": {
+                "v": "063",
+                "l": "063"
+              }
+            },
+            {
+              "v": {
+                "v": "065",
+                "l": "065"
+              }
+            },
+            {
+              "v": {
+                "v": "043",
+                "l": "043"
+              }
+            },
+            {
+              "v": {
+                "v": "021",
+                "l": "021"
+              }
+            },
+            {
+              "v": {
+                "v": "089",
+                "l": "089"
+              }
+            },
+            {
+              "v": {
+                "v": "023",
+                "l": "023"
+              }
+            },
+            {
+              "v": {
+                "v": "045",
+                "l": "045"
+              }
+            },
+            {
+              "v": {
+                "v": "067",
+                "l": "067"
+              }
+            },
+            {
+              "v": {
+                "v": "049",
+                "l": "049"
+              }
+            },
+            {
+              "v": {
+                "v": "027",
+                "l": "027"
+              }
+            },
+            {
+              "v": {
+                "v": "029",
+                "l": "029"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "COUNTY",
+          "columnName": "COUNTY",
+          "query": "^0\\d\\d",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "value.replace(/^0/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COUNTY using expression value.replace(/^0/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "COUNTY",
+          "columnName": "COUNTY",
+          "query": "^\\d+$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COUNTY",
+    "expression": "grel:cells['FIPS_NAME'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COUNTY using expression grel:cells['FIPS_NAME'].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Shape",
+    "description": "Remove column Shape"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OBJECTID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBJECTID using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "STATE",
+          "columnName": "STATE",
+          "query": "CA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "FOD_ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FOD_ID using expression value.toNumber()"
+  }
+]
