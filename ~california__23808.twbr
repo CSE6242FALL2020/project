@@ -1,0 +1,1553 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/CSE6242GroupProject?rev=1.5' id='CSE6242GroupProject' path='/workbooks' revision='1.7' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='california_wildfires' inline='true' name='federated.109d02y1wypr8n14j73h2196qlkw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='california_wildfires' name='textscan.0c33w9t0ne59li16p12xo0o4vo4m'>
+            <connection class='textscan' directory='D:/OneDrive - Erisal/School/CSE6242/project/data' filename='california_wildfires.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0c33w9t0ne59li16p12xo0o4vo4m' name='california_wildfires.csv' table='[california_wildfires#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='integer' name='FOD_ID' ordinal='1' />
+            <column datatype='string' name='FPA_ID' ordinal='2' />
+            <column datatype='string' name='SOURCE_SYSTEM_TYPE' ordinal='3' />
+            <column datatype='string' name='SOURCE_SYSTEM' ordinal='4' />
+            <column datatype='string' name='NWCG_REPORTING_AGENCY' ordinal='5' />
+            <column datatype='string' name='NWCG_REPORTING_UNIT_ID' ordinal='6' />
+            <column datatype='string' name='NWCG_REPORTING_UNIT_NAME' ordinal='7' />
+            <column datatype='integer' name='SOURCE_REPORTING_UNIT' ordinal='8' />
+            <column datatype='string' name='SOURCE_REPORTING_UNIT_NAME' ordinal='9' />
+            <column datatype='integer' name='LOCAL_FIRE_REPORT_ID' ordinal='10' />
+            <column datatype='string' name='LOCAL_INCIDENT_ID' ordinal='11' />
+            <column datatype='string' name='FIRE_CODE' ordinal='12' />
+            <column datatype='string' name='FIRE_NAME' ordinal='13' />
+            <column datatype='string' name='ICS_209_INCIDENT_NUMBER' ordinal='14' />
+            <column datatype='string' name='ICS_209_NAME' ordinal='15' />
+            <column datatype='string' name='MTBS_ID' ordinal='16' />
+            <column datatype='string' name='MTBS_FIRE_NAME' ordinal='17' />
+            <column datatype='string' name='COMPLEX_NAME' ordinal='18' />
+            <column datatype='integer' name='FIRE_YEAR' ordinal='19' />
+            <column datatype='real' name='DISCOVERY_DATE' ordinal='20' />
+            <column datatype='integer' name='DISCOVERY_DOY' ordinal='21' />
+            <column datatype='integer' name='DISCOVERY_TIME' ordinal='22' />
+            <column datatype='integer' name='STAT_CAUSE_CODE' ordinal='23' />
+            <column datatype='string' name='STAT_CAUSE_DESCR' ordinal='24' />
+            <column datatype='real' name='CONT_DATE' ordinal='25' />
+            <column datatype='integer' name='CONT_DOY' ordinal='26' />
+            <column datatype='integer' name='CONT_TIME' ordinal='27' />
+            <column datatype='real' name='FIRE_SIZE' ordinal='28' />
+            <column datatype='string' name='FIRE_SIZE_CLASS' ordinal='29' />
+            <column datatype='real' name='LATITUDE' ordinal='30' />
+            <column datatype='real' name='LONGITUDE' ordinal='31' />
+            <column datatype='integer' name='OWNER_CODE' ordinal='32' />
+            <column datatype='string' name='OWNER_DESCR' ordinal='33' />
+            <column datatype='string' name='STATE' ordinal='34' />
+            <column datatype='string' name='COUNTY' ordinal='35' />
+            <column datatype='integer' name='FIPS_CODE' ordinal='36' />
+            <column datatype='string' name='FIPS_NAME' ordinal='37' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0c33w9t0ne59li16p12xo0o4vo4m' name='california_wildfires.csv' table='[california_wildfires#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='integer' name='FOD_ID' ordinal='1' />
+            <column datatype='string' name='FPA_ID' ordinal='2' />
+            <column datatype='string' name='SOURCE_SYSTEM_TYPE' ordinal='3' />
+            <column datatype='string' name='SOURCE_SYSTEM' ordinal='4' />
+            <column datatype='string' name='NWCG_REPORTING_AGENCY' ordinal='5' />
+            <column datatype='string' name='NWCG_REPORTING_UNIT_ID' ordinal='6' />
+            <column datatype='string' name='NWCG_REPORTING_UNIT_NAME' ordinal='7' />
+            <column datatype='integer' name='SOURCE_REPORTING_UNIT' ordinal='8' />
+            <column datatype='string' name='SOURCE_REPORTING_UNIT_NAME' ordinal='9' />
+            <column datatype='integer' name='LOCAL_FIRE_REPORT_ID' ordinal='10' />
+            <column datatype='string' name='LOCAL_INCIDENT_ID' ordinal='11' />
+            <column datatype='string' name='FIRE_CODE' ordinal='12' />
+            <column datatype='string' name='FIRE_NAME' ordinal='13' />
+            <column datatype='string' name='ICS_209_INCIDENT_NUMBER' ordinal='14' />
+            <column datatype='string' name='ICS_209_NAME' ordinal='15' />
+            <column datatype='string' name='MTBS_ID' ordinal='16' />
+            <column datatype='string' name='MTBS_FIRE_NAME' ordinal='17' />
+            <column datatype='string' name='COMPLEX_NAME' ordinal='18' />
+            <column datatype='integer' name='FIRE_YEAR' ordinal='19' />
+            <column datatype='real' name='DISCOVERY_DATE' ordinal='20' />
+            <column datatype='integer' name='DISCOVERY_DOY' ordinal='21' />
+            <column datatype='integer' name='DISCOVERY_TIME' ordinal='22' />
+            <column datatype='integer' name='STAT_CAUSE_CODE' ordinal='23' />
+            <column datatype='string' name='STAT_CAUSE_DESCR' ordinal='24' />
+            <column datatype='real' name='CONT_DATE' ordinal='25' />
+            <column datatype='integer' name='CONT_DOY' ordinal='26' />
+            <column datatype='integer' name='CONT_TIME' ordinal='27' />
+            <column datatype='real' name='FIRE_SIZE' ordinal='28' />
+            <column datatype='string' name='FIRE_SIZE_CLASS' ordinal='29' />
+            <column datatype='real' name='LATITUDE' ordinal='30' />
+            <column datatype='real' name='LONGITUDE' ordinal='31' />
+            <column datatype='integer' name='OWNER_CODE' ordinal='32' />
+            <column datatype='string' name='OWNER_DESCR' ordinal='33' />
+            <column datatype='string' name='STATE' ordinal='34' />
+            <column datatype='string' name='COUNTY' ordinal='35' />
+            <column datatype='integer' name='FIPS_CODE' ordinal='36' />
+            <column datatype='string' name='FIPS_NAME' ordinal='37' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOD_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOD_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FOD_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FPA_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FPA_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FPA_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCE_SYSTEM_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOURCE_SYSTEM_TYPE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>SOURCE_SYSTEM_TYPE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCE_SYSTEM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOURCE_SYSTEM]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>SOURCE_SYSTEM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NWCG_REPORTING_AGENCY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NWCG_REPORTING_AGENCY]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>NWCG_REPORTING_AGENCY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NWCG_REPORTING_UNIT_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NWCG_REPORTING_UNIT_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>NWCG_REPORTING_UNIT_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NWCG_REPORTING_UNIT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NWCG_REPORTING_UNIT_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>NWCG_REPORTING_UNIT_NAME</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCE_REPORTING_UNIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SOURCE_REPORTING_UNIT]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>SOURCE_REPORTING_UNIT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCE_REPORTING_UNIT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOURCE_REPORTING_UNIT_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>SOURCE_REPORTING_UNIT_NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCAL_FIRE_REPORT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LOCAL_FIRE_REPORT_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>LOCAL_FIRE_REPORT_ID</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCAL_INCIDENT_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOCAL_INCIDENT_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>LOCAL_INCIDENT_ID</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_CODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRE_CODE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIRE_CODE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRE_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIRE_NAME</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICS_209_INCIDENT_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ICS_209_INCIDENT_NUMBER]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>ICS_209_INCIDENT_NUMBER</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICS_209_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ICS_209_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>ICS_209_NAME</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MTBS_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MTBS_ID]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>MTBS_ID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MTBS_FIRE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MTBS_FIRE_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>MTBS_FIRE_NAME</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMPLEX_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COMPLEX_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>COMPLEX_NAME</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIRE_YEAR]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIRE_YEAR</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISCOVERY_DATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DISCOVERY_DATE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>DISCOVERY_DATE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISCOVERY_DOY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DISCOVERY_DOY]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>DISCOVERY_DOY</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISCOVERY_TIME</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DISCOVERY_TIME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>DISCOVERY_TIME</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAT_CAUSE_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STAT_CAUSE_CODE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>STAT_CAUSE_CODE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAT_CAUSE_DESCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STAT_CAUSE_DESCR]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>STAT_CAUSE_DESCR</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONT_DATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CONT_DATE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>CONT_DATE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONT_DOY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONT_DOY]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>CONT_DOY</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONT_TIME</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONT_TIME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>CONT_TIME</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_SIZE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FIRE_SIZE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIRE_SIZE</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_SIZE_CLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRE_SIZE_CLASS]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIRE_SIZE_CLASS</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATITUDE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>LATITUDE</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGITUDE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>LONGITUDE</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNER_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OWNER_CODE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>OWNER_CODE</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNER_DESCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OWNER_DESCR]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>OWNER_DESCR</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTY]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>COUNTY</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS_CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIPS_CODE]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIPS_CODE</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIPS_NAME]</local-name>
+            <parent-name>[california_wildfires.csv]</parent-name>
+            <remote-alias>FIPS_NAME</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Complex Name' datatype='string' name='[COMPLEX_NAME]' role='dimension' type='nominal' />
+      <column caption='Cont Date' datatype='real' name='[CONT_DATE]' role='measure' type='quantitative' />
+      <column caption='Cont Doy' datatype='integer' name='[CONT_DOY]' role='measure' type='quantitative' />
+      <column caption='Cont Time' datatype='integer' name='[CONT_TIME]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Discovery Date' datatype='real' name='[DISCOVERY_DATE]' role='measure' type='quantitative' />
+      <column caption='Discovery Doy' datatype='integer' name='[DISCOVERY_DOY]' role='measure' type='quantitative' />
+      <column caption='Discovery Time' datatype='integer' name='[DISCOVERY_TIME]' role='measure' type='quantitative' />
+      <column caption='Fips Code' datatype='integer' name='[FIPS_CODE]' role='dimension' type='ordinal' />
+      <column caption='Fips Name' datatype='string' name='[FIPS_NAME]' role='dimension' type='nominal' />
+      <column caption='Fire Code' datatype='string' name='[FIRE_CODE]' role='dimension' type='nominal' />
+      <column caption='Fire Name' datatype='string' name='[FIRE_NAME]' role='dimension' type='nominal' />
+      <column caption='Fire Size' datatype='real' name='[FIRE_SIZE]' role='measure' type='quantitative' />
+      <column caption='Fire Size Class' datatype='string' name='[FIRE_SIZE_CLASS]' role='dimension' type='nominal' />
+      <column caption='Fire Year' datatype='integer' name='[FIRE_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Fod Id' datatype='integer' name='[FOD_ID]' role='dimension' type='ordinal' />
+      <column caption='Fpa Id' datatype='string' name='[FPA_ID]' role='dimension' type='nominal' />
+      <column caption='Ics 209 Incident Number' datatype='string' name='[ICS_209_INCIDENT_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Ics 209 Name' datatype='string' name='[ICS_209_NAME]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Local Fire Report Id' datatype='integer' name='[LOCAL_FIRE_REPORT_ID]' role='dimension' type='ordinal' />
+      <column caption='Local Incident Id' datatype='string' name='[LOCAL_INCIDENT_ID]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Mtbs Fire Name' datatype='string' name='[MTBS_FIRE_NAME]' role='dimension' type='nominal' />
+      <column caption='Mtbs Id' datatype='string' name='[MTBS_ID]' role='dimension' type='nominal' />
+      <column caption='Nwcg Reporting Agency' datatype='string' name='[NWCG_REPORTING_AGENCY]' role='dimension' type='nominal' />
+      <column caption='Nwcg Reporting Unit Id' datatype='string' name='[NWCG_REPORTING_UNIT_ID]' role='dimension' type='nominal' />
+      <column caption='Nwcg Reporting Unit Name' datatype='string' name='[NWCG_REPORTING_UNIT_NAME]' role='dimension' type='nominal' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Owner Code' datatype='integer' name='[OWNER_CODE]' role='dimension' type='ordinal' />
+      <column caption='Owner Descr' datatype='string' name='[OWNER_DESCR]' role='dimension' type='nominal' />
+      <column caption='Source Reporting Unit' datatype='integer' name='[SOURCE_REPORTING_UNIT]' role='measure' type='quantitative' />
+      <column caption='Source Reporting Unit Name' datatype='string' name='[SOURCE_REPORTING_UNIT_NAME]' role='dimension' type='nominal' />
+      <column caption='Source System' datatype='string' name='[SOURCE_SYSTEM]' role='dimension' type='nominal' />
+      <column caption='Source System Type' datatype='string' name='[SOURCE_SYSTEM_TYPE]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Stat Cause Code' datatype='integer' name='[STAT_CAUSE_CODE]' role='dimension' type='ordinal' />
+      <column caption='Stat Cause Descr' datatype='string' name='[STAT_CAUSE_DESCR]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='california_wildfires.csv' datatype='table' name='[__tableau_internal_object_id__].[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]' role='measure' type='quantitative' />
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[STAT_CAUSE_DESCR]' derivation='None' name='[none:STAT_CAUSE_DESCR:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Inclusions (Stat Cause Descr,State)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:STAT_CAUSE_DESCR:nk]' />
+          <groupfilter function='level-members' level='[none:STATE:nk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='STATE, COUNTY'>
+          <field>[STATE]</field>
+          <field>[COUNTY]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/CSE 6242 Group Project.twb Files/california_wildfires.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/22/2020 02:14:53 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='california_wildfires' increment-value='%null%' refresh-type='create' rows-inserted='189550' timestamp-start='2020-11-22 02:14:53.841' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>OBJECTID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OBJECTID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OBJECTID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>189550</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FOD_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FOD_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FOD_ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>189550</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FPA_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FPA_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FPA_ID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>189550</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOURCE_SYSTEM_TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SOURCE_SYSTEM_TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOURCE_SYSTEM_TYPE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOURCE_SYSTEM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SOURCE_SYSTEM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOURCE_SYSTEM</remote-alias>
+              <ordinal>4</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NWCG_REPORTING_AGENCY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NWCG_REPORTING_AGENCY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NWCG_REPORTING_AGENCY</remote-alias>
+              <ordinal>5</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NWCG_REPORTING_UNIT_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NWCG_REPORTING_UNIT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NWCG_REPORTING_UNIT_ID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NWCG_REPORTING_UNIT_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NWCG_REPORTING_UNIT_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NWCG_REPORTING_UNIT_NAME</remote-alias>
+              <ordinal>7</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOURCE_REPORTING_UNIT</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SOURCE_REPORTING_UNIT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOURCE_REPORTING_UNIT</remote-alias>
+              <ordinal>8</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOURCE_REPORTING_UNIT_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SOURCE_REPORTING_UNIT_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOURCE_REPORTING_UNIT_NAME</remote-alias>
+              <ordinal>9</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>253</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOCAL_FIRE_REPORT_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LOCAL_FIRE_REPORT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOCAL_FIRE_REPORT_ID</remote-alias>
+              <ordinal>10</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1851</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOCAL_INCIDENT_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LOCAL_INCIDENT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOCAL_INCIDENT_ID</remote-alias>
+              <ordinal>11</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31228</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRE_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRE_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIRE_CODE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8518</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRE_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRE_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIRE_NAME</remote-alias>
+              <ordinal>13</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32349</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ICS_209_INCIDENT_NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ICS_209_INCIDENT_NUMBER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ICS_209_INCIDENT_NUMBER</remote-alias>
+              <ordinal>14</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3689</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ICS_209_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ICS_209_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ICS_209_NAME</remote-alias>
+              <ordinal>15</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3689</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MTBS_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MTBS_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MTBS_ID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>888</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MTBS_FIRE_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MTBS_FIRE_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MTBS_FIRE_NAME</remote-alias>
+              <ordinal>17</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>888</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COMPLEX_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COMPLEX_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COMPLEX_NAME</remote-alias>
+              <ordinal>18</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1660</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRE_YEAR</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FIRE_YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIRE_YEAR</remote-alias>
+              <ordinal>19</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISCOVERY_DATE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DISCOVERY_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DISCOVERY_DATE</remote-alias>
+              <ordinal>20</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24371</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISCOVERY_DOY</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DISCOVERY_DOY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DISCOVERY_DOY</remote-alias>
+              <ordinal>21</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1319</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISCOVERY_TIME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DISCOVERY_TIME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DISCOVERY_TIME</remote-alias>
+              <ordinal>22</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5424</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STAT_CAUSE_CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[STAT_CAUSE_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STAT_CAUSE_CODE</remote-alias>
+              <ordinal>23</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STAT_CAUSE_DESCR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STAT_CAUSE_DESCR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STAT_CAUSE_DESCR</remote-alias>
+              <ordinal>24</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CONT_DATE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CONT_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CONT_DATE</remote-alias>
+              <ordinal>25</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22738</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CONT_DOY</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CONT_DOY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CONT_DOY</remote-alias>
+              <ordinal>26</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1282</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CONT_TIME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CONT_TIME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CONT_TIME</remote-alias>
+              <ordinal>27</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4128</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRE_SIZE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FIRE_SIZE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIRE_SIZE</remote-alias>
+              <ordinal>28</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>750</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRE_SIZE_CLASS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRE_SIZE_CLASS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIRE_SIZE_CLASS</remote-alias>
+              <ordinal>29</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LATITUDE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LATITUDE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LATITUDE</remote-alias>
+              <ordinal>30</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35023</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LONGITUDE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LONGITUDE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LONGITUDE</remote-alias>
+              <ordinal>31</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36371</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OWNER_CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OWNER_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OWNER_CODE</remote-alias>
+              <ordinal>32</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OWNER_DESCR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OWNER_DESCR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OWNER_DESCR</remote-alias>
+              <ordinal>33</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>34</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNTY</remote-alias>
+              <ordinal>35</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>131</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIPS_CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FIPS_CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIPS_CODE</remote-alias>
+              <ordinal>36</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>131</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIPS_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIPS_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIPS_NAME</remote-alias>
+              <ordinal>37</ordinal>
+              <family>california_wildfires.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>131</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[california_wildfires.csv_176C304E237F415195D4BD53BB89CE87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:STAT_CAUSE_DESCR:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Missing/Undefined&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Equipment Use&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Structure&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Powerline&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fireworks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Campfire&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lightning&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Railroad&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Miscellaneous&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Children&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Smoking&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Debris Burning&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='california_wildfires.csv' id='california_wildfires.csv_176C304E237F415195D4BD53BB89CE87'>
+            <properties context=''>
+              <relation connection='textscan.0c33w9t0ne59li16p12xo0o4vo4m' name='california_wildfires.csv' table='[california_wildfires#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='OBJECTID' ordinal='0' />
+                  <column datatype='integer' name='FOD_ID' ordinal='1' />
+                  <column datatype='string' name='FPA_ID' ordinal='2' />
+                  <column datatype='string' name='SOURCE_SYSTEM_TYPE' ordinal='3' />
+                  <column datatype='string' name='SOURCE_SYSTEM' ordinal='4' />
+                  <column datatype='string' name='NWCG_REPORTING_AGENCY' ordinal='5' />
+                  <column datatype='string' name='NWCG_REPORTING_UNIT_ID' ordinal='6' />
+                  <column datatype='string' name='NWCG_REPORTING_UNIT_NAME' ordinal='7' />
+                  <column datatype='integer' name='SOURCE_REPORTING_UNIT' ordinal='8' />
+                  <column datatype='string' name='SOURCE_REPORTING_UNIT_NAME' ordinal='9' />
+                  <column datatype='integer' name='LOCAL_FIRE_REPORT_ID' ordinal='10' />
+                  <column datatype='string' name='LOCAL_INCIDENT_ID' ordinal='11' />
+                  <column datatype='string' name='FIRE_CODE' ordinal='12' />
+                  <column datatype='string' name='FIRE_NAME' ordinal='13' />
+                  <column datatype='string' name='ICS_209_INCIDENT_NUMBER' ordinal='14' />
+                  <column datatype='string' name='ICS_209_NAME' ordinal='15' />
+                  <column datatype='string' name='MTBS_ID' ordinal='16' />
+                  <column datatype='string' name='MTBS_FIRE_NAME' ordinal='17' />
+                  <column datatype='string' name='COMPLEX_NAME' ordinal='18' />
+                  <column datatype='integer' name='FIRE_YEAR' ordinal='19' />
+                  <column datatype='real' name='DISCOVERY_DATE' ordinal='20' />
+                  <column datatype='integer' name='DISCOVERY_DOY' ordinal='21' />
+                  <column datatype='integer' name='DISCOVERY_TIME' ordinal='22' />
+                  <column datatype='integer' name='STAT_CAUSE_CODE' ordinal='23' />
+                  <column datatype='string' name='STAT_CAUSE_DESCR' ordinal='24' />
+                  <column datatype='real' name='CONT_DATE' ordinal='25' />
+                  <column datatype='integer' name='CONT_DOY' ordinal='26' />
+                  <column datatype='integer' name='CONT_TIME' ordinal='27' />
+                  <column datatype='real' name='FIRE_SIZE' ordinal='28' />
+                  <column datatype='string' name='FIRE_SIZE_CLASS' ordinal='29' />
+                  <column datatype='real' name='LATITUDE' ordinal='30' />
+                  <column datatype='real' name='LONGITUDE' ordinal='31' />
+                  <column datatype='integer' name='OWNER_CODE' ordinal='32' />
+                  <column datatype='string' name='OWNER_DESCR' ordinal='33' />
+                  <column datatype='string' name='STATE' ordinal='34' />
+                  <column datatype='string' name='COUNTY' ordinal='35' />
+                  <column datatype='integer' name='FIPS_CODE' ordinal='36' />
+                  <column datatype='string' name='FIPS_NAME' ordinal='37' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='California Total Number of Wildfires 1992 - 2015'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='CaliforniaTotalNumberofWildfires1992-2015' path='/workbooks/CSE6242GroupProject' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='california_wildfires' name='federated.109d02y1wypr8n14j73h2196qlkw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.109d02y1wypr8n14j73h2196qlkw'>
+            <column caption='County' datatype='string' name='[COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[OBJECTID]' derivation='Count' name='[cnt:OBJECTID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COUNTY]' derivation='None' name='[none:COUNTY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.109d02y1wypr8n14j73h2196qlkw].[none:STATE:nk]' context='true'>
+            <groupfilter function='member' level='[none:STATE:nk]' member='&quot;CA&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.109d02y1wypr8n14j73h2196qlkw].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.109d02y1wypr8n14j73h2196qlkw].[Longitude (generated)]' field-type='quantitative' max='-12690375.421866816' min='-13926177.529448101' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.109d02y1wypr8n14j73h2196qlkw].[Latitude (generated)]' field-type='quantitative' max='5172277.4297920596' min='3832118.7502086638' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]' max='3084' min='1' palette='red_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]' />
+              <size column='[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]' />
+              <text column='[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]' />
+              <lod column='[federated.109d02y1wypr8n14j73h2196qlkw].[none:COUNTY:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[County:	<[federated.109d02y1wypr8n14j73h2196qlkw].[none:COUNTY:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[Number of Wildfires:	<[federated.109d02y1wypr8n14j73h2196qlkw].[cnt:OBJECTID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='12.390629768371582' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.109d02y1wypr8n14j73h2196qlkw].[Latitude (generated)]</rows>
+        <cols>[federated.109d02y1wypr8n14j73h2196qlkw].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{30FDBB23-64A9-4C3C-B065-2892B8DB2718}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='California Total Number of Fires'>
+      <repository-location id='CaliforniaTotalNumberofFires' path='/workbooks/CSE6242GroupProject' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='700' minheight='800' minwidth='700' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='California Total Number of Wildfires 1992 - 2015' w='97714' x='1143' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='19' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='California Total Number of Wildfires 1992 - 2015' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{68F583DA-0A79-40AE-BE3E-0D434117CCA8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='California Total Number of Wildfires 1992 - 2015'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{C85590D6-ED24-4805-948D-4A1A0B9F0E3B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='California Total Number of Fires'>
+      <viewpoints>
+        <viewpoint name='California Total Number of Wildfires 1992 - 2015'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DDC1E6BC-D97B-4074-ABE7-F1266E179AA4}' />
+    </window>
+  </windows>
+</workbook>
