@@ -10,10 +10,10 @@
 
 <style type="text/css">
     pre { line-height: 125%; margin: 0; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
 .highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
@@ -14451,7 +14451,7 @@ number of wildfires per state between 1992 and 2015.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
@@ -14513,13 +14513,12 @@ number of wildfires per state between 1992 and 2015.</p>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+
 <div class='tableauPlaceholder' id='viz1605982185029' style='position: relative'>
 	<noscript>
-		<a href='#'>
-			<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;NumberofWildfires&#47;1_rss.png' style='border: none' />
-		</a>
+		<a href='#'> <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;NumberofWildfires&#47;1_rss.png' style='border: none' /> </a>
 	</noscript>
-	<object class='tableauViz'  style='display:none;'>
+	<object class='tableauViz' style='display:none;'>
 		<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 		<param name='embed_code_version' value='3' />
 		<param name='site_root' value='' />
@@ -14533,10 +14532,25 @@ number of wildfires per state between 1992 and 2015.</p>
 		<param name='display_overlay' value='yes' />
 		<param name='display_count' value='yes' />
 		<param name='language' value='en' />
-		<param name='filter' value='publish=yes' />
-	</object>
+		<param name='filter' value='publish=yes' /> </object>
 </div>
-<script type='text/javascript'>                    var divElement = document.getElementById('viz1605982185029');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1605982185029');
+var vizElement = divElement.getElementsByTagName('object')[0];
+if(divElement.offsetWidth > 800) {
+	vizElement.style.width = '1000px';
+	vizElement.style.height = '827px';
+} else if(divElement.offsetWidth > 500) {
+	vizElement.style.width = '1000px';
+	vizElement.style.height = '827px';
+} else {
+	vizElement.style.width = '100%';
+	vizElement.style.height = '727px';
+}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 
 </div>
 
@@ -14558,39 +14572,40 @@ the scope of our project to the state of California.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauPlaceholder&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;viz1605983897195&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;position: relative&#39;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauPlaceholder&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;viz1606012369370&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;position: relative&#39;</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#39; &#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CS&amp;#47;CSE6242GroupProject&amp;#47;CaliforniaTotalNumberofFires&amp;#47;1_rss.png&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;border: none&#39;</span> <span class="p">/&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#39; &#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Ca&amp;#47;CaliforniaWildfiresperCounty&amp;#47;CaliforniaTotalNumberofFires&amp;#47;1_rss.png&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;border: none&#39;</span> <span class="p">/&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 	<span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">object</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauViz&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;display:none;&#39;</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;host_url&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https%3A%2F%2Fpublic.tableau.com%2F&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;embed_code_version&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;3&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;site_root&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;&#39;</span> <span class="p">/&gt;</span>
-		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;CSE6242GroupProject&amp;#47;CaliforniaTotalNumberofFires&#39;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;CaliforniaWildfiresperCounty&amp;#47;CaliforniaTotalNumberofFires&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;tabs&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;no&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;toolbar&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
-		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CS&amp;#47;CSE6242GroupProject&amp;#47;CaliforniaTotalNumberofFires&amp;#47;1.png&#39;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Ca&amp;#47;CaliforniaWildfiresperCounty&amp;#47;CaliforniaTotalNumberofFires&amp;#47;1.png&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;animate_transition&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_spinner&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_overlay&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_count&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;language&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;en&#39;</span> <span class="p">/&gt;</span>
-		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;filter&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;publish=yes&#39;</span> <span class="p">/&gt;</span> <span class="p">&lt;/</span><span class="nt">object</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;filter&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;publish=yes&#39;</span> <span class="p">/&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">object</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p">&gt;</span>
-<span class="kd">var</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;viz1605983897195&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;viz1606012369370&#39;</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">vizElement</span> <span class="o">=</span> <span class="nx">divElement</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
 <span class="k">if</span><span class="p">(</span><span class="nx">divElement</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">&gt;</span> <span class="mf">800</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;1000px&#39;</span><span class="p">;</span>
+	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;700px&#39;</span><span class="p">;</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="s1">&#39;827px&#39;</span><span class="p">;</span>
 <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">divElement</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">&gt;</span> <span class="mf">500</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;1000px&#39;</span><span class="p">;</span>
+	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;700px&#39;</span><span class="p">;</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="s1">&#39;827px&#39;</span><span class="p">;</span>
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;100%&#39;</span><span class="p">;</span>
@@ -14621,34 +14636,35 @@ the scope of our project to the state of California.</p>
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 
-<div class='tableauPlaceholder' id='viz1605983897195' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1606012369370' style='position: relative'>
 	<noscript>
-		<a href='#'> <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;CaliforniaTotalNumberofFires&#47;1_rss.png' style='border: none' /> </a>
+		<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaWildfiresperCounty&#47;CaliforniaTotalNumberofFires&#47;1_rss.png' style='border: none' /></a>
 	</noscript>
 	<object class='tableauViz' style='display:none;'>
 		<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 		<param name='embed_code_version' value='3' />
 		<param name='site_root' value='' />
-		<param name='name' value='CSE6242GroupProject&#47;CaliforniaTotalNumberofFires' />
+		<param name='name' value='CaliforniaWildfiresperCounty&#47;CaliforniaTotalNumberofFires' />
 		<param name='tabs' value='no' />
 		<param name='toolbar' value='yes' />
-		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;CaliforniaTotalNumberofFires&#47;1.png' />
+		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaWildfiresperCounty&#47;CaliforniaTotalNumberofFires&#47;1.png' />
 		<param name='animate_transition' value='yes' />
 		<param name='display_static_image' value='yes' />
 		<param name='display_spinner' value='yes' />
 		<param name='display_overlay' value='yes' />
 		<param name='display_count' value='yes' />
 		<param name='language' value='en' />
-		<param name='filter' value='publish=yes' /> </object>
+		<param name='filter' value='publish=yes' />
+	</object>
 </div>
 <script type='text/javascript'>
-var divElement = document.getElementById('viz1605983897195');
+var divElement = document.getElementById('viz1606012369370');
 var vizElement = divElement.getElementsByTagName('object')[0];
 if(divElement.offsetWidth > 800) {
-	vizElement.style.width = '1000px';
+	vizElement.style.width = '700px';
 	vizElement.style.height = '827px';
 } else if(divElement.offsetWidth > 500) {
-	vizElement.style.width = '1000px';
+	vizElement.style.width = '700px';
 	vizElement.style.height = '827px';
 } else {
 	vizElement.style.width = '100%';
@@ -14683,23 +14699,23 @@ the Southern part of California.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauPlaceholder&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;viz1605984951519&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;position: relative&#39;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauPlaceholder&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;viz1606011758444&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;position: relative&#39;</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#39; &#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CS&amp;#47;CSE6242GroupProject&amp;#47;CausesofWildfiresoverTimeinCalifornia&amp;#47;1_rss.png&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;border: none&#39;</span> <span class="p">/&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#39; &#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Ca&amp;#47;CausesofWildfiresinCalifornia&amp;#47;CausesofWildfiresoverTimeinCalifornia&amp;#47;1_rss.png&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;border: none&#39;</span> <span class="p">/&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 	<span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">object</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;tableauViz&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;display:none;&#39;</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;host_url&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https%3A%2F%2Fpublic.tableau.com%2F&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;embed_code_version&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;3&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;site_root&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;&#39;</span> <span class="p">/&gt;</span>
-		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;CSE6242GroupProject&amp;#47;CausesofWildfiresoverTimeinCalifornia&#39;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;CausesofWildfiresinCalifornia&amp;#47;CausesofWildfiresoverTimeinCalifornia&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;tabs&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;no&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;toolbar&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
-		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CS&amp;#47;CSE6242GroupProject&amp;#47;CausesofWildfiresoverTimeinCalifornia&amp;#47;1.png&#39;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Ca&amp;#47;CausesofWildfiresinCalifornia&amp;#47;CausesofWildfiresoverTimeinCalifornia&amp;#47;1.png&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;animate_transition&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_static_image&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
 		<span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;display_spinner&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;yes&#39;</span> <span class="p">/&gt;</span>
@@ -14710,13 +14726,13 @@ the Southern part of California.</p>
 	<span class="p">&lt;/</span><span class="nt">object</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p">&gt;</span>
-<span class="kd">var</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;viz1605984951519&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;viz1606011758444&#39;</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">vizElement</span> <span class="o">=</span> <span class="nx">divElement</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
 <span class="k">if</span><span class="p">(</span><span class="nx">divElement</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">&gt;</span> <span class="mf">800</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;1714px&#39;</span><span class="p">;</span>
+	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;800px&#39;</span><span class="p">;</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="s1">&#39;931px&#39;</span><span class="p">;</span>
 <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">divElement</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">&gt;</span> <span class="mf">500</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;1714px&#39;</span><span class="p">;</span>
+	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;800px&#39;</span><span class="p">;</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="s1">&#39;931px&#39;</span><span class="p">;</span>
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 	<span class="nx">vizElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="s1">&#39;100%&#39;</span><span class="p">;</span>
@@ -14747,18 +14763,18 @@ the Southern part of California.</p>
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 
-<div class='tableauPlaceholder' id='viz1605984951519' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1606011758444' style='position: relative'>
 	<noscript>
-		<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;CausesofWildfiresoverTimeinCalifornia&#47;1_rss.png' style='border: none' /></a>
+		<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CausesofWildfiresinCalifornia&#47;CausesofWildfiresoverTimeinCalifornia&#47;1_rss.png' style='border: none' /></a>
 	</noscript>
 	<object class='tableauViz' style='display:none;'>
 		<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 		<param name='embed_code_version' value='3' />
 		<param name='site_root' value='' />
-		<param name='name' value='CSE6242GroupProject&#47;CausesofWildfiresoverTimeinCalifornia' />
+		<param name='name' value='CausesofWildfiresinCalifornia&#47;CausesofWildfiresoverTimeinCalifornia' />
 		<param name='tabs' value='no' />
 		<param name='toolbar' value='yes' />
-		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSE6242GroupProject&#47;CausesofWildfiresoverTimeinCalifornia&#47;1.png' />
+		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CausesofWildfiresinCalifornia&#47;CausesofWildfiresoverTimeinCalifornia&#47;1.png' />
 		<param name='animate_transition' value='yes' />
 		<param name='display_static_image' value='yes' />
 		<param name='display_spinner' value='yes' />
@@ -14769,13 +14785,13 @@ the Southern part of California.</p>
 	</object>
 </div>
 <script type='text/javascript'>
-var divElement = document.getElementById('viz1605984951519');
+var divElement = document.getElementById('viz1606011758444');
 var vizElement = divElement.getElementsByTagName('object')[0];
 if(divElement.offsetWidth > 800) {
-	vizElement.style.width = '1714px';
+	vizElement.style.width = '800px';
 	vizElement.style.height = '931px';
 } else if(divElement.offsetWidth > 500) {
-	vizElement.style.width = '1714px';
+	vizElement.style.width = '800px';
 	vizElement.style.height = '931px';
 } else {
 	vizElement.style.width = '100%';
